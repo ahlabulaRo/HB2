@@ -1,4 +1,4 @@
-const targetDate = new Date("Feb 26, 2026 00:00:00 GMT+0400").getTime();
+const targetDate = new Date("Feb 16, 2026 00:00:00 GMT+0400").getTime();
 const timerElement = document.getElementById("timer");
 
 const updateTimer = () => {
@@ -35,4 +35,5 @@ timerElement.classList.add("loading");
 setTimeout(() => {
     updateTimer();
     setInterval(updateTimer, 1000);
+
 }, 3000);
