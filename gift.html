@@ -1,0 +1,108 @@
+<!-- gift.html - Versiunea actualizată -->
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift for Ninuka</title>
+    <link rel="stylesheet" href="block.css">
+    <link rel="stylesheet" href="surprise.css">
+    <link rel="stylesheet" href="gift.css">
+</head>
+
+<body>
+    <div id="lock-screen">
+        <div class="timer-container">
+            <h1>It's almost the time...</h1>
+            <div id="timer">Calculating...</div>
+        </div>
+    </div>
+
+    <main id="surprise-content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Photos/logo.png" alt="Logo" class="nav-logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#history">History</a></li>
+                <li><a href="wish.html">Wish</a></li>
+                <li><a href="gift.html">Gift</a></li>
+                <li>
+                    <button id="dark-mode-toggle">
+                        <span id="mode-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="gift-section">
+            <div class="bg-pattern"></div>
+
+            <div class="hami-card">
+                <div class="character-container">
+                    <img src="Photos/hami.png" alt="Cute Character" class="floating-hami">
+                </div>
+
+                <h1 class="gift-main-title">A special surprise!</h1>
+                <p class="gift-desc">Ninuko, click the box to see your gift...</p>
+
+                <div class="gift-visual-box">
+                    <div id="closed-gift" class="gift-box-anim" onclick="openGift()"></div>
+
+                    <div id="opened-content" class="hidden">
+                        <div class="voucher-card">
+                            <span class="sparkle">✨</span>
+                            <h2>Surprise for Ninuka! 💕</h2>
+
+                            <div class="personal-message">
+                                I want to buy you a gift card but I don't know if you want a Sephora one or a H&M one
+                                or maybe you have a certain wish so just text me with the name of the shop you like
+                                the most and I'll send you the gift card ❤️
+                            </div>
+
+                            <div class="shop-buttons">
+                                <button class="shop-option" onclick="chooseShop('Sephora')">
+                                    🎀 Sephora - for my beauty queen
+                                </button>
+                                <button class="shop-option" onclick="chooseShop('H&M')">
+                                    👗 H&M - for my fashionista
+                                </button>
+                                <button class="shop-option" onclick="chooseShop('Altceva')">
+                                    💝 Different Store - Tell me which one you'll like
+                                </button>
+                            </div>
+
+                            <p class="note-to-ninuka">
+                                After pressing on one of these buttons you'll see my instagram account, and you'll have
+                                to paste what my message copied to your clipboard and send me so I'll know which one you
+                                chose❤️
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h4>Contact me 💌</h4>
+                <p>Email: <a href="mailto:andreicristian1805@gmail.com">andreicristian1805@gmail.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/mylob.dailywishes/"
+                        target="_blank">@mylob.dailywishes</a></p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section copyright">
+                <p>&copy; 2026 Created with ❤️ for Ninuka. All rights reserved!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="block.js"></script>
+    <script src="surprise.js"></script>
+    <script src="gift.js"></script>
+</body>
+
+</html>

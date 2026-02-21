@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Wish - Ninuka</title>
+    <link rel="stylesheet" href="block.css">
+    <link rel="stylesheet" href="surprise.css">
+    <link rel="stylesheet" href="wish.css">
+</head>
+
+<body>
+    <div id="lock-screen">
+        <div class="timer-container">
+            <h1>It's almost the time...</h1>
+            <div id="timer">Calculating...</div>
+        </div>
+    </div>
+
+    <main id="surprise-content">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Photos/logo.png" alt="Logo" class="nav-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#history">History</a></li>
+                <li><a href="wish.html">Wish</a></li>
+                <li><a href="index.html#gift">Gift</a></li>
+                <li>
+                    <button id="dark-mode-toggle">
+                        <span id="mode-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="wish-section">
+            <div id="wish-interaction-box">
+                <h1 class="wish-title">Spin the wheel, Ninuko</h1>
+                <p class="wish-subtitle">Ale you ready?</p>
+
+                <div id="magic-area">
+                    <div class="wheel-wrapper">
+                        <div class="wheel-container">
+                            <div class="wheel-pointer">▼</div>
+                            <div id="wheel" class="wheel">
+                                <div class="sector" style="--i:1; --clr:#ffb3c1;"><span>1</span></div>
+                                <div class="sector" style="--i:2; --clr:#ffe5ec;"><span>2</span></div>
+                                <div class="sector" style="--i:3; --clr:#ffb3c1;"><span>3</span></div>
+                                <div class="sector" style="--i:4; --clr:#ffe5ec;"><span>4</span></div>
+                                <div class="sector" style="--i:5; --clr:#ffb3c1;"><span>5</span></div>
+                                <div class="sector" style="--i:6; --clr:#ffe5ec;"><span>6</span></div>
+                            </div>
+                            <button id="spin-btn">SPIN</button>
+                        </div>
+                    </div>
+
+                    <div id="wish-result-modal" class="wish-modal">
+                        <div class="wish-modal-content">
+                            <h2 id="congrats-text">Congratulations! 🎉</h2>
+                            <p id="wish-announced">You got wish number <span id="wish-number"></span>!</p>
+                            <button id="view-wish-btn">See the wish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="wish-modal" class="wish-overlay">
+            <div class="wish-card">
+                <div class="wish-card-content">
+                    <span class="close-modal">&times;</span>
+                    <h2 class="wish-card-title">Your wish 🎉</h2>
+                    <div class="wish-card-body">
+                        <p id="wish-text-display"></p>
+                    </div>
+                    <button id="close-wish-btn">Yaaay! ❤️</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h4>Contact me 💌</h4>
+                <p>Email: <a href="mailto:exemplu@email.com">andreicristian1805@gmail.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/mylob.dailywishes/"
+                        target="_blank">@mylob.dailywishes</a>
+                </p>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-section copyright">
+                <p>&copy; 2026 Created with ❤️ for Ninuka. All rights reserved!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="block.js"></script>
+    <script src="surprise.js"></script>
+    <script src="wish.js"></script>
+</body>
+
+</html>
