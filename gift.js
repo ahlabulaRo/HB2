@@ -69,14 +69,14 @@ function showSimpleInstructions(shop, message) {
     notif.innerHTML = `
         <div class="notif-header">
             <span class="notif-emoji">${shop === 'Sephora' ? '🌸' : shop === 'H&M' ? '👗' : '💝'}</span>
-            <span class="notif-title">MESAJ COPIAT! 📋</span>
+            <span class="notif-title">MESSAGE COPIED! 📋</span>
             <button class="notif-close" onclick="this.parentElement.parentElement.remove()">✕</button>
         </div>
         <div class="notif-body">
-            <p>Acum două click-uri și gata:</p>
+            <p>Now 2 clicks and everything is settle:</p>
             <ol>
-                <li><strong>Apasă "Mesaj"</strong> pe profilul ei</li>
-                <li><strong>Paste-uiește</strong> mesajul (ține apăsat în căsuță)</li>
+                <li><strong>Press "Message"</strong> on my profile</li>
+                <li><strong>Paste the</strong> message</li>
                 <li><strong>Send</strong> 🎁</li>
             </ol>
             <div class="notif-message">"${message.substring(0, 50)}..."</div>
